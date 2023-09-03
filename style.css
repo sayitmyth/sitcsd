@@ -1,0 +1,120 @@
+/* The Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* The Design For PC Devices */
+
+@media screen and (min-width: 768px) {
+  .contentio {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    z-index: 999;
+    font-weight: 600;
+  }
+  .tabular {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-weight: 600;
+  }
+}
+
+/* The End Of Design For PC Devices */
+
+/* The Design For Mobile Devices */
+
+@media screen and (min-width: 380px) {
+  .contentio {
+    width: 280px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-weight: 600;
+  }
+}
+
+/* The End Of Design For Mobile Devices */
+
+.magnetico:hover {
+  background-color: black;
+  color: aliceblue;
+  transition: color 0.8s ease;
+}
+
+/* the pc tab design */
+
+.tabcontent {
+  display: none;
+}
+
+.tablinks.active {
+  background-color: #f1f1f1;
+}
+
+/* the about tab */
+
+.scrolly::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+/* magnetic button I */
+
+.btn {
+  transition: transform 0.3s ease;
+}
+
+/* Magnetic effect on hover */
+
+.my-button {
+  cursor: pointer;
+}
+
+.my-button:hover {
+  color: #fff;
+  background-color: #000;
+  transition: 0.5s background-color, 0.5s box-shadow;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+/* the letter change */
+
+.letters {
+    display: inline-block;
+}
+
+.letters::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.letter {
+    float: left;
+    width: 120px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.letter.is-hidden {
+    opacity: 1;
+    width: 0;
+    visibility: hidden;
+}
+
